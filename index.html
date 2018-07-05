@@ -13,7 +13,7 @@
 <body>
     <div class="Container">
         <div id="res">
-            <input type="text" disabled id="resultado" size="30"><br> 
+            <input type="text" disabled id="mostrar" size="30"><br> 
         </div>
 
 <!--botones-->
@@ -22,9 +22,9 @@
 
             <!--Primera linea de botones-->
             <div class="pl">
-                    <button id="borrar_u"><-</button>
-                    <button id="borrar_s">CE</button>
-                    <button id="borrar_t">C</button>
+                    <button id="borrar_u" onclick="res()"><-</button>
+                    <button id="borrar_s" onclick="borrar()">CE</button>
+                    <button id="borrar_t" >C</button>
                     <button id="pos_neg">±</button>
                     <button id="raiz">√</button>
             </div>
@@ -32,9 +32,9 @@
             <!--Segunda linea de botones-->
 
             <div class="sl">
-                    <button id="siete">7</button>
-                    <button id="ocho">8</button>
-                    <button id="nueve">9</button>
+                    <button id="siete" onclick="mostrar(7)">7</button>
+                    <button id="ocho" onclick="mostrar(8)">8</button>
+                    <button id="nueve" onclick="mostrar(9)">9</button>
                     <button id="dividir">/</button>
                     <button id="porcentaje">%</button>
             </div>

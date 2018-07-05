@@ -1,6 +1,22 @@
 
+function mostrar(n){
+    var x = document.getElementById("mostrar").value;
+    numeros.num2 = document.getElementById("mostrar").value = x + n;
+    console.log(num2);
+
+}
+
+
+
+function borrar(){
+    document.getElementById("mostrar").value = "";
+}
+
+
+
+
 /**Funcion de sumar */
-function Sumar() {
+/*function Sumar() {
 
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
@@ -19,7 +35,7 @@ function Sumar() {
 }
 /** FUncion de Restar */
 
-function Restar() {
+/*function Restar() {
 
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
@@ -36,7 +52,7 @@ function Restar() {
 }
 
 /**Funcion para multiplicar */
-function Multiplicar() {
+/*function Multiplicar() {
 
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
@@ -54,7 +70,7 @@ function Multiplicar() {
 
 /**Funcion para dividir */
 
-function Dividir() {
+/*function Dividir() {
 
     var num1 = document.getElementById("num1").value;
     var num2 = document.getElementById("num2").value;
@@ -70,11 +86,4 @@ function Dividir() {
 }
 
 
-
-
-
-
-
-
-
- 
+*/

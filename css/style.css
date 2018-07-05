@@ -12,6 +12,7 @@ body {
     margin: 5px;
     border-radius: 5%;
     background-color: #83B8C9;
+    text-align: right;
 }
 
 #botones button{
@@ -37,6 +38,10 @@ body {
 #cero{
     width: 80px !important;
     margin-left: 15px;
+}
+
+#botones button:hover{
+    background-color: #83B8C9;
 }
 
 
