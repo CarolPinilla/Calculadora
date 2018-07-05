@@ -1,0 +1,42 @@
+body {
+    margin: 30px;
+}
+.Container{
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#res input{
+    height: 30px;
+    margin: 5px;
+    border-radius: 5%;
+    background-color: #83B8C9;
+}
+
+#botones button{
+    margin-bottom: 5px;
+     width: 45px;
+     height: 30px;
+     border-radius: 100%;
+     background-color: #239CC3;
+     color: white;      
+}
+
+#igual {
+    height: 70px !important;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 80px;
+}
+
+.cl, .ql{
+    margin-left:-46px;
+}
+
+#cero{
+    width: 80px !important;
+    margin-left: 15px;
+}
+
+
