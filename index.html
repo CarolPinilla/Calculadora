@@ -2,77 +2,87 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Calculadora</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="js/javascript.js"></script>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculadora</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="js/javascript.js"></script>
 </head>
 
 <body>
-    <div class="Container">
-        <div id="res">
-            <input type="text" disabled id="mostrar" size="30"><br> 
+        <div class="Container">
+                <header>
+                        <div id="res">
+                                <input type="text" disabled id="mostrarA">
+                                <input type="text" disabled id="mostrar">
+                        </div>
+
+                </header>
+
+                <!--botones-->
+
+                <article id="botones">
+
+                        <!--Primera linea de botones-->
+                        <section class="pl">
+                                <button id="porcentaje">%</button>
+                                <button id="raiz">√</button>
+                                <button id="cuadrado">x²</button>
+                                <button id="sobrex">1/x</button>
+                        </section>
+
+                        <!--Segunda linea de botones-->
+
+                        <section class="sl">
+                                <button id="borrar_p">CE</button>
+                                <button id="borrar_t">C</button>
+                                <button id="retro" onclick="">Ret</button>
+                                <button id="dividir">/</button>
+                        </section>
+
+                        <!--Tercera linea de botones-->
+
+                        <section class="tl">
+                                <button id="siete" onclick="recibir(7)">7</button>
+                                <button id="ocho" onclick="recibir(8)">8</button>
+                                <button id="nueve" onclick="recibir(9)">9</button>
+                                <button id="multiplicar">*</button>
+                        </section>
+
+                        <!--Cuarta linea de botones-->
+
+                        <section class="cl">
+                                <button id="cuatro" onclick="recibir(4)">4</button>
+                                <button id="cinco" onclick="recibir(5)">5</button>
+                                <button id="seis" onclick="recibir(6)">6</button>
+                                <button id="restar">-</button>
+
+                        </section>
+
+                        <!--Quinta linea de botones-->
+
+                        <section class="ql">
+                                <button id="uno" onclick="recibir(1)">1</button>
+                                <button id="dos" onclick="recibir(2)">2</button>
+                                <button id="tres" onclick="recibir(3)">3</button>
+                                <button id="sumar" onclick="recibir('op')">+</button>
+                        </section>
+
+                        <!--sexta linea de botones-->
+
+                        <section class="sl">
+                                <button id="pos_neg">±</button>
+                                <button id="cero" onclick="recibir(0)">0</button>
+                                <button id="punto" onclick="recibir('.')">.</button>
+                                <button id="igual" onclick="recibir(10)">=</button>
+                        </section>
+
+                </article>
+
+
+
         </div>
-
-<!--botones-->
-
-        <div id="botones">
-
-            <!--Primera linea de botones-->
-            <div class="pl">
-                    <button id="borrar_u" onclick="res()"><-</button>
-                    <button id="borrar_s" onclick="borrar()">CE</button>
-                    <button id="borrar_t" >C</button>
-                    <button id="pos_neg">±</button>
-                    <button id="raiz">√</button>
-            </div>
-
-            <!--Segunda linea de botones-->
-
-            <div class="sl">
-                    <button id="siete" onclick="mostrar(7)">7</button>
-                    <button id="ocho" onclick="mostrar(8)">8</button>
-                    <button id="nueve" onclick="mostrar(9)">9</button>
-                    <button id="dividir">/</button>
-                    <button id="porcentaje">%</button>
-            </div>
-
-            <!--Tercera linea de botones-->
-
-            <div class="tl">
-                    <button id="cuatro">4</button>
-                    <button id="cinco">5</button>
-                    <button id="seis">6</button>
-                    <button id="mult">*</button>
-                    <button id="sobrex">1/x</button>
-            </div>
-
-            <!--Cuarta linea de botones-->
-
-            <div class="cl">
-                    <button id="siete">1</button>
-                    <button id="ocho">2</button>
-                    <button id="nueve">3</button>
-                    <button id="restar">-</button>
-                    
-            </div>
-            
-            <!--Quinta linea de botones-->
-
-            <div class="ql">
-                    <button id="cero">0</button>
-                    <button id="punto">.</button>
-                    <button id="sumar">+</button>
-                    
-            </div>
-
-            <button id="igual">=</button>
-        </div>
-        
-
-    </div>
 </body>
 
 </html>

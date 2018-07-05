@@ -1,89 +1,45 @@
+//declaracion de variables
+var p = 0;
+var ini = 0;
+var nume1;
 
-function mostrar(n){
+// Funcion general que recibe los parametros enviados desde el html
+function recibir(n) {
+
     var x = document.getElementById("mostrar").value;
-    numeros.num2 = document.getElementById("mostrar").value = x + n;
-    console.log(num2);
 
-}
+    //Darle valor cuando este en blanco y le opriman cero
+    if (ini == 0 && n == ".") {
+        nume1 = document.getElementById("mostrar").value = "0.";
+        p = 1;
+    } else if (n == 1 || n == 2 || n == 3 || n == 4 || n == 5 || n == 6 || n == 7 || n == 8 || n == 9 || n == 0 || n == ".")
+        if (p == 0 && n == ".") { //Validacion cuando es el primer punto que ingresa
+            p = 1;
+            nume1 = document.getElementById("mostrar").value = x + n;
+
+        }
+        else if (p == 1 && n == ".") { //validacion si ya se ha ingresado algun punto
+            nume1 = document.getElementById("mostrar").value = x;
+
+        } else {//sino se ingresa ningun punto
+            nume1 = document.getElementById("mostrar").value = x + n;
+        }
+    ini = 1;
 
 
-
-function borrar(){
-    document.getElementById("mostrar").value = "";
-}
-
-
-
-
-/**Funcion de sumar */
-/*function Sumar() {
-
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var res;
-    if (num1 == "") {
-        alert("Ingrese el numero en la casilla numero 1");
-
-    } else if (num2 == "") {
-        alert("Ingrese el numero en la casilla numero 2");
-    } else {
-        res = (parseInt(num1) + parseInt(num2));
-        alert(res);
+    if (n == "op") {
+        this.operacion(nume1);
+        document.getElementById("mostrar").value = "";
+        nume1="";
+        ini = 0;
+        p = 0;
+        
     }
 
 
 }
-/** FUncion de Restar */
 
-/*function Restar() {
-
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var res;
-    if (num1 == "") {
-        alert("Ingrese el numero en la casilla numero 1");
-
-    } else if (num2 == "") {
-        alert("Ingrese el numero en la casilla numero 2");
-    } else {
-        res = (num1 - num2);
-        alert(res);
-    }
+function operacion(element) {
+    console.log(element);
 }
 
-/**Funcion para multiplicar */
-/*function Multiplicar() {
-
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var res;
-    if (num1 == "") {
-        alert("Ingrese el numero en la casilla numero 1");
-
-    } else if (num2 == "") {
-        alert("Ingrese el numero en la casilla numero 2");
-    } else {
-        res = (num1 * num2);
-        alert(res);
-    }
-}
-
-/**Funcion para dividir */
-
-/*function Dividir() {
-
-    var num1 = document.getElementById("num1").value;
-    var num2 = document.getElementById("num2").value;
-    var res;
-    if (num1 == "") {
-        alert("Ingrese el numero en la casilla numero 1");
-    } else if (num2 == 0) {
-        alert("Error matematico no puede dividir por 0");
-    } else {
-        res = (num1 / num2);
-        alert(res);
-    }
-}
-
-
-*/
